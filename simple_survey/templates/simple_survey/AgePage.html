@@ -1,0 +1,22 @@
+{% extends "simple_survey/NumPad.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Simple Survey
+{% endblock %}
+
+{% block content %}
+    <html>
+      <body>
+        <div class="numpad">
+          <p>What is your age?</p>
+          <div class='display'>
+            <input type='text' name='age' id = 'num'>
+          </div>
+        </div>
+        <input id="pin" name="pin">
+      </body>
+    </html>
+    {% next_button %}
+{% endblock %}
+

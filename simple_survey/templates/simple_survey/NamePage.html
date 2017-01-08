@@ -1,0 +1,13 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Simple Survey
+{% endblock %}
+
+{% block content %}
+    {% formfield player.name with label="What is your name?" %}
+
+    {% next_button %}
+
+{% endblock %}
